@@ -1,0 +1,24 @@
+.btnGen {
+    margin: 3px;
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 15px 15px;
+    width: 2em;
+    color: black;
+    background-color: #46b5ff;
+    font-family: 'Recursive', sans-serif;
+    border-radius: 8px;
+}
+
+.btnGen:hover {
+    background-color: #85e7ff;
+}
+
+#calc {
+    font-size: 30px;
+    background-color: #0086cb;
+    font-family: 'Recursive', sans-serif;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
