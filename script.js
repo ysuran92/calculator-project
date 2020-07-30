@@ -25,11 +25,18 @@ function keyDownTextField(e) {
 
 */
 
+function back() {
+    var value = document.getElementById("calc").value;
+    document.getElementById("calc").value = value.substr(0, value.length - 1);
+}
+
 document.addEventListener("keydown", (event) => {
     if (event.keyCode == 13) {
         calc.value = eval(calc.value);
     } else if (event.keyCode == 46) {
         calc.value = "";
+    } else if (event.keyCode == 8) {
+        back();
     } else {
         calc.value += event.key;
     }
