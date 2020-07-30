@@ -84,5 +84,52 @@
 
 .btnColor {
     width: 5em;
+    height: 5em;
     font-family: 'Recursive', sans-serif;
+    border-radius: 50%;
+}
+
+#red {
+    height: 50px;
+    width: 50px;
+    background: #d50000;
+    background: -moz-linear-gradient(180deg, #ff5131 50%, #d50000 51%);
+    background: -webkit-linear-gradient(180deg, #ff5131 50%, #d50000 51%);
+    background: linear-gradient(180deg, #ff5131 50%, #d50000 51%);
+}
+
+#green {
+    height: 50px;
+    width: 50px;
+    background: #00c853;
+    background: -moz-linear-gradient(180deg, #5efc82 50%, #00c853 51%);
+    background: -webkit-linear-gradient(180deg, #5efc82 50%, #00c853 51%);
+    background: linear-gradient(180deg, #5efc82 50%, #00c853 51%);
+}
+
+#blue {
+    height: 50px;
+    width: 50px;
+    background: #46b5ff;
+    background: -moz-linear-gradient(180deg, #85e7ff 50%, #46b5ff 51%);
+    background: -webkit-linear-gradient(180deg, #85e7ff 50%, #46b5ff 51%);
+    background: linear-gradient(180deg, #85e7ff 50%, #46b5ff 51%);
+}
+
+#yellow {
+    height: 50px;
+    width: 50px;
+    background: #ffd600;
+    background: -moz-linear-gradient(180deg, #ffff52 50%, #ffd600 51%);
+    background: -webkit-linear-gradient(180deg, #ffff52 50%, #ffd600 51%);
+    background: linear-gradient(180deg, #ffff52 50%, #ffd600 51%);
+}
+
+#silver {
+    height: 50px;
+    width: 50px;
+    background: #9e9e9e;
+    background: -moz-linear-gradient(180deg, #cfcfcf 50%, #9e9e9e 51%);
+    background: -webkit-linear-gradient(180deg, #cfcfcf 50%, #9e9e9e 51%);
+    background: linear-gradient(180deg, #cfcfcf 50%, #9e9e9e 51%);
 }
