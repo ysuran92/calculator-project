@@ -60,6 +60,12 @@ function runColor() {
 
 function changeColorRed() {
     let element = document.getElementById("calcInput");
+    let elementField = document.getElementById("calc");
+    elementField.classList.add("calcRed");
+    elementField.classList.remove("calcBlue");
+    elementField.classList.remove("calcGreen");
+    elementField.classList.remove("calcYellow");
+    elementField.classList.remove("calcSilver");
     element.classList.add("calcInputRed");
     element.classList.remove("calcInputBlue");
     element.classList.remove("calcInputGreen");
@@ -69,9 +75,60 @@ function changeColorRed() {
 
 function changeColorBlue() {
     let element = document.getElementById("calcInput");
+    let elementField = document.getElementById("calc");
+    elementField.classList.add("calcBlue");
+    elementField.classList.remove("calcRed");
+    elementField.classList.remove("calcGreen");
+    elementField.classList.remove("calcYellow");
+    elementField.classList.remove("calcSilver");
     element.classList.add("calcInputBlue");
     element.classList.remove("calcInputRed");
     element.classList.remove("calcInputGreen");
     element.classList.remove("calcInputYellow");
     element.classList.remove("calcInputSilver");
+};
+
+function changeColorGreen() {
+    let element = document.getElementById("calcInput");
+    let elementField = document.getElementById("calc");
+    elementField.classList.add("calcGreen");
+    elementField.classList.remove("calcBlue");
+    elementField.classList.remove("calcRed");
+    elementField.classList.remove("calcYellow");
+    elementField.classList.remove("calcSilver");
+    element.classList.add("calcInputGreen");
+    element.classList.remove("calcInputRed");
+    element.classList.remove("calcInputBlue");
+    element.classList.remove("calcInputYellow");
+    element.classList.remove("calcInputSilver");
+};
+
+function changeColorYellow() {
+    let element = document.getElementById("calcInput");
+    let elementField = document.getElementById("calc");
+    elementField.classList.add("calcYellow");
+    elementField.classList.remove("calcBlue");
+    elementField.classList.remove("calcGreen");
+    elementField.classList.remove("calcRed");
+    elementField.classList.remove("calcSilver");
+    element.classList.add("calcInputBlue");
+    element.classList.remove("calcInputRed");
+    element.classList.remove("calcInputGreen");
+    element.classList.remove("calcInputBlue");
+    element.classList.remove("calcInputSilver");
+};
+
+function changeColorSilver() {
+    let element = document.getElementById("calcInput");
+    let elementField = document.getElementById("calc");
+    elementField.classList.add("calcSilver");
+    elementField.classList.remove("calcBlue");
+    elementField.classList.remove("calcGreen");
+    elementField.classList.remove("calcYellow");
+    elementField.classList.remove("calcRed");
+    element.classList.add("calcInputBlue");
+    element.classList.remove("calcInputRed");
+    element.classList.remove("calcInputGreen");
+    element.classList.remove("calcInputYellow");
+    element.classList.remove("calcInputBlue");
 };

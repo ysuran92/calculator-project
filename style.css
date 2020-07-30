@@ -12,11 +12,22 @@
 
 #calc {
     font-size: 30px;
-    background-color: #0086cb;
     font-family: 'Recursive', sans-serif;
     color: black;
     margin-bottom: 5px;
     margin-top: 10px;
+}
+
+.calcBlue {
+    background-color: #0086cb;
+}
+
+.calcRed {
+    background-color: #9b0000;
+}
+
+.calcGreen {
+    background-color: #009624;
 }
 
 .calcInputBlue .btnGen {
@@ -33,6 +44,14 @@
 
 .calcInputRed .btnGen:hover {
     background-color: #ff5131;
+}
+
+.calcInputGreen .btnGen {
+    background-color: #00c853;
+}
+
+.calcInputGreen .btnGen:hover {
+    background-color: #5efc82;
 }
 
 .colorSelect {
