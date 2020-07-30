@@ -80,6 +80,7 @@
 
 .colorSelect {
     padding-top: 10px;
+    outline: none;
 }
 
 .btnColor {
@@ -87,6 +88,7 @@
     height: 5em;
     font-family: 'Recursive', sans-serif;
     border-radius: 50%;
+    outline: none;
 }
 
 #red {
@@ -96,6 +98,7 @@
     background: -moz-linear-gradient(180deg, #ff5131 50%, #d50000 51%);
     background: -webkit-linear-gradient(180deg, #ff5131 50%, #d50000 51%);
     background: linear-gradient(180deg, #ff5131 50%, #d50000 51%);
+    outline: none;
 }
 
 #green {
@@ -105,6 +108,7 @@
     background: -moz-linear-gradient(180deg, #5efc82 50%, #00c853 51%);
     background: -webkit-linear-gradient(180deg, #5efc82 50%, #00c853 51%);
     background: linear-gradient(180deg, #5efc82 50%, #00c853 51%);
+    outline: none;
 }
 
 #blue {
@@ -114,6 +118,7 @@
     background: -moz-linear-gradient(180deg, #85e7ff 50%, #46b5ff 51%);
     background: -webkit-linear-gradient(180deg, #85e7ff 50%, #46b5ff 51%);
     background: linear-gradient(180deg, #85e7ff 50%, #46b5ff 51%);
+    outline: none;
 }
 
 #yellow {
@@ -123,6 +128,7 @@
     background: -moz-linear-gradient(180deg, #ffff52 50%, #ffd600 51%);
     background: -webkit-linear-gradient(180deg, #ffff52 50%, #ffd600 51%);
     background: linear-gradient(180deg, #ffff52 50%, #ffd600 51%);
+    outline: none;
 }
 
 #silver {
@@ -132,4 +138,5 @@
     background: -moz-linear-gradient(180deg, #cfcfcf 50%, #9e9e9e 51%);
     background: -webkit-linear-gradient(180deg, #cfcfcf 50%, #9e9e9e 51%);
     background: linear-gradient(180deg, #cfcfcf 50%, #9e9e9e 51%);
+    outline: none;
 }
