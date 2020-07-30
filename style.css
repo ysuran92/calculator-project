@@ -10,10 +10,6 @@
     border-radius: 8px;
 }
 
-.btnGen:hover {
-    background-color: #85e7ff;
-}
-
 #calc {
     font-size: 30px;
     background-color: #0086cb;
@@ -21,4 +17,29 @@
     color: black;
     margin-bottom: 5px;
     margin-top: 10px;
+}
+
+.calcInputBlue .btnGen {
+    background-color: #46b5ff;
+}
+
+.calcInputBlue .btnGen:hover {
+    background-color: #85e7ff;
+}
+
+.calcInputRed .btnGen {
+    background-color: #d50000;
+}
+
+.calcInputRed .btnGen:hover {
+    background-color: #ff5131;
+}
+
+.colorSelect {
+    padding-top: 10px;
+}
+
+.btnColor {
+    width: 5em;
+    font-family: 'Recursive', sans-serif;
 }
