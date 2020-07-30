@@ -60,5 +60,18 @@ function runColor() {
 
 function changeColorRed() {
     let element = document.getElementById("calcInput");
-    element.classList.toggle("calcInputRed");
-}
+    element.classList.add("calcInputRed");
+    element.classList.remove("calcInputBlue");
+    element.classList.remove("calcInputGreen");
+    element.classList.remove("calcInputYellow");
+    element.classList.remove("calcInputSilver");
+};
+
+function changeColorBlue() {
+    let element = document.getElementById("calcInput");
+    element.classList.add("calcInputBlue");
+    element.classList.remove("calcInputRed");
+    element.classList.remove("calcInputGreen");
+    element.classList.remove("calcInputYellow");
+    element.classList.remove("calcInputSilver");
+};
