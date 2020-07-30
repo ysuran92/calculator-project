@@ -111,7 +111,7 @@ function changeColorYellow() {
     elementField.classList.remove("calcGreen");
     elementField.classList.remove("calcRed");
     elementField.classList.remove("calcSilver");
-    element.classList.add("calcInputBlue");
+    element.classList.add("calcInputYellow");
     element.classList.remove("calcInputRed");
     element.classList.remove("calcInputGreen");
     element.classList.remove("calcInputBlue");
@@ -126,7 +126,7 @@ function changeColorSilver() {
     elementField.classList.remove("calcGreen");
     elementField.classList.remove("calcYellow");
     elementField.classList.remove("calcRed");
-    element.classList.add("calcInputBlue");
+    element.classList.add("calcInputSilver");
     element.classList.remove("calcInputRed");
     element.classList.remove("calcInputGreen");
     element.classList.remove("calcInputYellow");

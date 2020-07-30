@@ -30,6 +30,14 @@
     background-color: #009624;
 }
 
+.calcYellow {
+    background-color: #c7a500;
+}
+
+.calcSilver {
+    background-color: #707070;
+}
+
 .calcInputBlue .btnGen {
     background-color: #46b5ff;
 }
@@ -52,6 +60,22 @@
 
 .calcInputGreen .btnGen:hover {
     background-color: #5efc82;
+}
+
+.calcInputYellow .btnGen {
+    background-color: #ffd600;
+}
+
+.calcInputYellow .btnGen:hover {
+    background-color: #ffff52;
+}
+
+.calcInputSilver .btnGen {
+    background-color: #9e9e9e;
+}
+
+.calcInputSilver .btnGen:hover {
+    background-color: #cfcfcf;
 }
 
 .colorSelect {
