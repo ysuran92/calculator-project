@@ -34,9 +34,10 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
+let botones = document.getElementById("calcInput");
+let elementField = document.getElementById("calc");
+
 function changeColor(color) {
-    let botones = document.getElementById("calcInput");
-    let elementField = document.getElementById("calc");
     botones.className = `calcInput${color}`;
     elementField.className = `calc${color}`;
 };
@@ -44,4 +45,6 @@ function changeColor(color) {
 function darkTheme() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+    botones.classList.toggle(`calcInputDark`);
+    elementField.classList.toggle(`calcDark`);
 }
