@@ -40,3 +40,8 @@ function changeColor(color) {
     botones.className = `calcInput${color}`;
     elementField.className = `calc${color}`;
 };
+
+function darkTheme() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
