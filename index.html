@@ -36,7 +36,7 @@
     </div>
 
     <div class="colorSelect col-12">
-        <button class="btnColor" type="button" id="red" onclick="changeColor('Red')"></button>
+        <button class="btnColor" type="button" id="red" onclick="changeColor('Red')" onclick="resetDark()"></button>
         <button class="btnColor" type="button" id="green" onclick="changeColor('Green')"></button>
         <button class="btnColor" type="button" id="blue" onclick="changeColor('Blue')"></button>
         <button class="btnColor" type="button" id="yellow" onclick="changeColor('Yellow')"></button>
@@ -45,7 +45,7 @@
 
     <div>
         <label class="switch">
-            <input type="checkbox" onclick="darkTheme()">
+            <input type="checkbox" class="slider" id="sliderDark" onclick="changeColor('Dark')">
             <span class="slider round"></span>
           </label>
         <p class="darkTheme">Dark Theme</p>
