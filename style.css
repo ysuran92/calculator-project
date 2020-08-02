@@ -94,6 +94,7 @@ body {
 
 .calcInputDark .btnGen {
     background-color: #212121;
+    color: white;
 }
 
 .calcInputDark .btnGen:hover {

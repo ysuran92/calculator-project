@@ -74,6 +74,7 @@ function darkTheme() {
     element.classList.add("dark-mode");
     botones.classList.add(`calcInputDark`);
     elementField.classList.add(`calcDark`);
+    elementField.style.color = "white";
     disableColors();
 };
 
@@ -81,5 +82,6 @@ function lightTheme() {
     element.classList.remove("dark-mode");
     botones.classList.remove(`calcInputDark`);
     elementField.classList.remove(`calcDark`);
+    elementField.style.color = "black";
     enableColors();
 }
