@@ -34,7 +34,8 @@ document.addEventListener("keydown", (event) => {
     } else if (event.keyCode >= 96 && event.keyCode <= 105) {
         calc.value += event.key;
     } else if (event.keyCode == 107 || event.keyCode == 109 ||
-        event.keyCode == 106 || event.keyCode == 111) {
+        event.keyCode == 106 || event.keyCode == 111 || event.keyCode == 190 ||
+        event.keyCode == 110) {
         calc.value += event.key;
     }
 });
