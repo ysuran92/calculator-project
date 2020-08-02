@@ -1,7 +1,7 @@
-var btns = document.getElementsByTagName("button");
-var calc = document.getElementById("calc");
+let btns = document.getElementsByTagName("button");
+let calc = document.getElementById("calc");
 
-for (var thisBtn of btns) {
+for (let thisBtn of btns) {
     thisBtn.addEventListener("click", function() {
         if (this.innerHTML == "=") calc.value = eval(calc.value);
         else if (this.innerHTML == "C") calc.value = "";
@@ -18,7 +18,7 @@ for (var thisBtn of btns) {
 }
 
 function back() {
-    var value = document.getElementById("calc").value;
+    let value = document.getElementById("calc").value;
     document.getElementById("calc").value = value.substr(0, value.length - 1);
 }
 
@@ -33,9 +33,14 @@ document.addEventListener("keydown", (event) => {
         calc.value += event.key;
     } else if (event.keyCode >= 96 && event.keyCode <= 105) {
         calc.value += event.key;
-    } else if (event.keyCode == 107 || event.keyCode == 109 ||
-        event.keyCode == 106 || event.keyCode == 111 || event.keyCode == 190 ||
-        event.keyCode == 110) {
+    } else if (
+        event.keyCode == 107 ||
+        event.keyCode == 109 ||
+        event.keyCode == 106 ||
+        event.keyCode == 111 ||
+        event.keyCode == 190 ||
+        event.keyCode == 110
+    ) {
         calc.value += event.key;
     }
 });
@@ -82,7 +87,7 @@ function darkTheme() {
     elementField.classList.add(`calcDark`);
     elementField.style.color = "white";
     disableColors();
-};
+}
 
 function lightTheme() {
     element.classList.remove("dark-mode");
@@ -91,3 +96,14 @@ function lightTheme() {
     elementField.style.color = "black";
     enableColors();
 }
+
+let egg = new Egg();
+egg
+    .addCode("4,2,0", function() {
+        jQuery('#egggif').fadeIn(500, function() {
+            window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+        });
+    })
+    .addHook(function() {
+        console.log("#blazeit");
+    }).listen();
