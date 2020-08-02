@@ -29,7 +29,12 @@ document.addEventListener("keydown", (event) => {
         calc.value = "";
     } else if (event.keyCode == 8) {
         back();
-    } else {
+    } else if (event.keyCode >= 48 && event.keyCode <= 57) {
+        calc.value += event.key;
+    } else if (event.keyCode >= 96 && event.keyCode <= 105) {
+        calc.value += event.key;
+    } else if (event.keyCode == 107 || event.keyCode == 109 ||
+        event.keyCode == 106 || event.keyCode == 111) {
         calc.value += event.key;
     }
 });
