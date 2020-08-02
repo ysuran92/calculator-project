@@ -43,6 +43,8 @@ let greenBTN = document.getElementById("green");
 let blueBTN = document.getElementById("blue");
 let yellowBTN = document.getElementById("yellow");
 let silverBTN = document.getElementById("silver");
+let radio1 = document.getElementById("customRadio1");
+let radio2 = document.getElementById("customRadio2");
 
 function enableColors() {
     redBTN.disabled = false;
@@ -52,21 +54,32 @@ function enableColors() {
     silverBTN.disabled = false;
 }
 
+function disableColors() {
+    redBTN.disabled = true;
+    greenBTN.disabled = true;
+    blueBTN.disabled = true;
+    yellowBTN.disabled = true;
+    silverBTN.disabled = true;
+}
+
 function changeColor(color) {
-    if (color == "Dark") {
-        element.classList.toggle("dark-mode");
-        botones.classList.toggle(`calcInputDark`);
-        elementField.classList.toggle(`calcDark`);
-        redBTN.disabled = true;
-        greenBTN.disabled = true;
-        blueBTN.disabled = true;
-        yellowBTN.disabled = true;
-        silverBTN.disabled = true;
-    } else {
-        botones.className = `calcInput${color}`;
-        elementField.className = `calc${color}`;
-        element.classList.remove("dark-mode");
-        botones.classList.remove(`calcInputDark`);
-        elementField.classList.remove(`calcDark`);
-    }
+    botones.className = `calcInput${color}`;
+    elementField.className = `calc${color}`;
+    element.classList.remove("dark-mode");
+    botones.classList.remove(`calcInputDark`);
+    elementField.classList.remove(`calcDark`);
+}
+
+function darkTheme() {
+    element.classList.add("dark-mode");
+    botones.classList.add(`calcInputDark`);
+    elementField.classList.add(`calcDark`);
+    disableColors();
+};
+
+function lightTheme() {
+    element.classList.remove("dark-mode");
+    botones.classList.remove(`calcInputDark`);
+    elementField.classList.remove(`calcDark`);
+    enableColors();
 }

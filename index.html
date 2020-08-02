@@ -43,12 +43,13 @@
         <button class="btnColor" type="button" id="silver" onclick="changeColor('Silver')"></button>
     </div>
 
-    <div>
-        <label class="switch">
-            <input type="checkbox" class="slider" id="sliderDark" onclick="changeColor('Dark')">
-            <span class="slider round"></span>
-          </label>
-        <p class="darkTheme">Dark Theme</p>
+    <div class="custom-control custom-radio margin-custom">
+        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" onclick="lightTheme()">
+        <label class="custom-control-label" for="customRadio1">Light Theme</label>
+    </div>
+    <div class="custom-control custom-radio margin-custom2">
+        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" onclick="darkTheme()">
+        <label class="custom-control-label dark" for="customRadio2">Dark Theme</label>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
