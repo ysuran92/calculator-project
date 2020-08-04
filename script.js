@@ -22,6 +22,8 @@ function back() {
     document.getElementById("calc").value = value.substr(0, value.length - 1);
 }
 
+// let regEx = /^\s*([-+]?)(\d+)(?:\s*([-+*\/])\s*((?:\s[-+])?\d+)\s*)+$/;
+
 document.addEventListener("keydown", (event) => {
     if (event.keyCode == 13 || event.code == "NumpadEnter") {
         calc.value = eval(calc.value);
@@ -100,10 +102,13 @@ function lightTheme() {
 let egg = new Egg();
 egg
     .addCode("4,2,0", function() {
-        jQuery('#egggif').fadeIn(500, function() {
-            window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+        jQuery("#egggif").fadeIn(500, function() {
+            window.setTimeout(function() {
+                jQuery("#egggif").hide();
+            }, 5000);
         });
     })
     .addHook(function() {
         console.log("#blazeit");
-    }).listen();
+    })
+    .listen();
